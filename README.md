@@ -36,7 +36,10 @@ The spacecraft ADCS architecture implements multi-mode attitude stabilization ta
 ### 1. Detumbling Mode (B-dot Magnetic Controller)
 * **Objective**: Rapidly dissipates kinetic rotational energy after launch deployment using only ambient geomagnetic field interactions.
 * **Control Law**: The control dipole moment $\mathbf{m}$ is actuated in direct opposition to the rate of change of the measured geomagnetic field vector $\mathbf{\dot{B}}$:
-  $$\mathbf{m} = -k \mathbf{\dot{B}}$$
+
+$$
+\mathbf{m} = -k \mathbf{\dot{B}}
+$$
 * **Actuation**: 3-axis electromagnetic coils (magnetorquers) interacting with the Earth's magnetic flux density $\mathbf{B}$ to generate damping torques $\boldsymbol{\tau} = \mathbf{m} \times \mathbf{B}$.
 
 ### 2. Nominal Pointing Mode (Reaction & Momentum Wheels)
